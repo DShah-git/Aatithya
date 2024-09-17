@@ -179,6 +179,7 @@ a {
     margin-top:2rem;
     transition:0.1s ease-in-out;
     z-index: 100;
+    font-size: 1.5rem;
 }
 
 @keyframes shift{
@@ -191,14 +192,10 @@ a {
 }
 
 
-.float-nav a{
-    font-size: 1rem !important;
-    
-}
 
 
 .link a {
-    font-size: 1.5rem;
+    font-size: inherit;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -208,7 +205,7 @@ a {
 }
 
 .link a:hover {
-    border-bottom: 3px solid var(--red);
+    text-decoration:underline;
 }
 
 .icon {
