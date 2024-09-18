@@ -417,11 +417,17 @@ a {
 
     .about-container {
         background-image: url('./assets/mobile-bg-2.png');
+        height: max-content;
+        background-size: contain;
     }
 
     .banquet-container {
         background-image: url('./assets/mobile-bg-2.png');
+        height: max-content;
+        background-size: contain;
     }
+
+   
 
     .nav-container{
         flex-wrap: wrap;
