@@ -1,6 +1,8 @@
 let nav = document.getElementById("nav-container")
 let container = document.getElementById("container")
-let links = document.getElementsByClassName("a")
+
+let images = document.getElementById("images")
+let infoContainer = document.getElementById("infoContainer")
 
 window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
@@ -11,7 +13,7 @@ window.addEventListener("scroll", (event) => {
         nav.style.top = "1.5rem !important"
         nav.style.right = "2rem"
         nav.style.fontSize = "1.25rem"
-        nav.style.boxShadow = "rgba(100, 100, 111, 1) 0px 7px 29px 0px;"
+        nav.style.boxShadow = " box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
     }
     else{
         nav.style.position = "sticky"
@@ -20,9 +22,19 @@ window.addEventListener("scroll", (event) => {
         nav.style.border = "0px"
         nav.style.fontSize = "1.5rem"
         nav.style.boxShadow = ""
+    } 
+
+    console.log(scroll)
+
+    if(scroll>=600 && !images.classList.value.split(' ').includes('animate-down')){
+        images.classList.add('animate-down')
     }
 
-    
+    if(scroll>=600 && !infoContainer.classList.value.split(' ').includes('animate-up')){
+        infoContainer.classList.add('animate-up')
+    }
 
 });
+
+
 
