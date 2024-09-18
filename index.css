@@ -411,19 +411,24 @@ a {
 
 
 @media only screen and (max-width: 550px) {
+    
+    .h1{
+        font-size: 4rem ;
+    }
+    
     .container {
       background-image: url('./assets/BG_1_Mobile.png');
     }
 
     .about-container {
         background-image: url('./assets/mobile-bg-2.png');
-        height: max-content;
+        height: calc(max-content + 3rem) ;
         background-size: contain;
     }
 
     .banquet-container {
         background-image: url('./assets/mobile-bg-2.png');
-        height: max-content;
+        height: calc(max-content + 3rem) ;
         background-size: contain;
     }
 
