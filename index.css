@@ -269,7 +269,7 @@ a {
 }
 
 .menu_link{
-    font-size: 1.75rem !important;
+    font-size: 1.25rem !important;
     text-align: center;
     width: max-content;
     margin: auto auto;
@@ -277,7 +277,7 @@ a {
 
 .image-layout>div{
     width: 40%;
-    height: 350px;
+    height: 250px;
     display: flex;
     justify-content: center;
     margin-inline:auto;
@@ -311,7 +311,7 @@ a {
 }
 
 .info-container p{
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-block: 1rem;
     text-align: left;
     font: poppins;
@@ -361,7 +361,7 @@ a {
     color: black;
     gap:2rem;
     margin-block:1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .info img{
@@ -382,6 +382,6 @@ a {
 .created{
     background-color: rgba(0, 0, 0, 0.799);
     color: white;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding:0.25rem 2rem;
 }
