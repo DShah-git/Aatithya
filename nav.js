@@ -10,28 +10,34 @@ let headingContainer = document.getElementById("headingContainer")
 let about = document.getElementById("about")
 
 
+let toggleClose = document.getElementById("toggleClose")
+
+let toggleOpen = document.getElementById("toggleOpen")
+
 window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
-    if(scroll>=container.clientHeight - 70 - (24*2)){
-        nav.style.position = "fixed"
-        nav.style.backgroundColor = "#e8e8cf"
-        nav.style.border = "2px solid #A20606"
-        nav.style.top = "1.5rem !important"
-        nav.style.right = "2rem"
-        nav.style.fontSize = "1.25rem"
-        nav.style.boxShadow = " box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+
+   
+    if(window.outerWidth>=550){
+        if(scroll>=container.clientHeight - 70 - (24*2)){
+            nav.style.position = "fixed"
+            nav.style.backgroundColor = "#e8e8cf"
+            nav.style.border = "2px solid #A20606"
+            nav.style.top = "1.5rem !important"
+            nav.style.right = "2rem"
+            nav.style.fontSize = "1.25rem"
+            nav.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+        }
+        else{
+            nav.style.position = "sticky"
+            nav.style.backgroundColor = "transparent"
+            nav.style.top = "1.5rem"
+            nav.style.border = "0px"
+            nav.style.fontSize = "1.5rem"
+            nav.style.boxShadow = ""
+        } 
     }
-    else{
-        nav.style.position = "sticky"
-        nav.style.backgroundColor = "transparent"
-        nav.style.top = "1.5rem"
-        nav.style.border = "0px"
-        nav.style.fontSize = "1.5rem"
-        nav.style.boxShadow = ""
-    } 
-
-
-    
+ 
 
     if(scroll>=600 && !images.classList.value.split(' ').includes('animate-down')){
         images.classList.add('animate-down')
@@ -54,5 +60,15 @@ window.addEventListener("scroll", (event) => {
     }
 });
 
+toggleOpen.addEventListener("click",()=>{
+    toggleOpen.style.display = "none"
+    nav.style.display = "block"
 
+})
+
+toggleClose.addEventListener("click",()=>{
+    toggleOpen.style.display = "flex"
+    toggleOpen.style.position = "fixed"
+    nav.style.display = "none"
+})
 

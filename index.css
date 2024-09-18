@@ -37,7 +37,7 @@ body {
     font-family: "Sirin Stencil", sans-serif;
     font-weight: 400;
     font-style: normal;
-    width: 100vw;
+
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -112,7 +112,7 @@ a {
     box-shadow: 0 0 0 100rem var(--cream);
     display: flex;
     align-items: center;
-    padding-top:15%;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -218,7 +218,6 @@ a {
     animation-delay: 0.5s;
     opacity: 0;
     margin-top:2rem;
-    transition:0.1s ease-in-out;
     z-index: 100;
     font-size: 1.5rem;
 }
@@ -385,3 +384,129 @@ a {
     font-size: 1rem;
     padding:0.25rem 2rem;
 }
+
+.nav-menu{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    position: fixed;
+    right:1.5rem;
+    top:1.5rem;
+    background-color: var(--cream);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.toggleClose{
+    display: none;
+}
+
+.nav-menu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 550px) {
+    .container {
+      background-image: url('./assets/BG_1_Mobile.png');
+    }
+
+    .about-container {
+        background-image: url('./assets/mobile-bg-2.png');
+    }
+
+    .banquet-container {
+        background-image: url('./assets/mobile-bg-2.png');
+    }
+
+    .nav-container{
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .image-layout{
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .image-layout div:nth-of-type(2){
+        display: none;
+    }
+
+    .image-layout>div{
+        width: 90%;
+        margin-top: 0.5rem;
+        height: 200px;
+    }
+
+    .info-container{
+        width: 90%;
+        font-size: 0.8rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .info-container p{
+        text-align: center;
+    }
+
+    .footer{
+        height: max-content;
+    }
+
+    .border-container-4{
+        flex-direction: column;
+        padding:2rem;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .border-container-4 div{
+        width: 100%;
+    }
+
+    .nav-container{
+        right:1rem !important;
+        gap:1rem;
+        flex-direction: column;
+        top:1rem;
+        display: none;
+        position : fixed;
+        background-color: #e8e8cf;
+        border : 2px solid #A20606;
+        top : 1.5rem !important;
+        right : 2rem;
+        font-size : 1.25rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        text-align: right;
+        transition: 0s;
+        opacity: 1;
+        animation:none;
+    }
+
+    .toggleClose{
+        display: block;
+        margin-block:0.5rem;
+    }
+
+    .nav-menu{
+        display: flex;
+    }
+
+    .link a {
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 0.5rem;
+        padding-block: 0.2rem
+    }
+}
+
