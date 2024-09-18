@@ -418,18 +418,27 @@ a {
     
     .container {
       background-image: url('./assets/BG_1_Mobile.png');
+      padding:0.5rem;
     }
 
     .about-container {
         background-image: url('./assets/mobile-bg-2.png');
         height: max-content ;
         background-size:cover;
+        background-position: center center;
+        padding:0.5rem;
     }
 
     .banquet-container {
         background-image: url('./assets/mobile-bg-2.png');
-        height:max-content ;
-        background-size: cover;
+        height: max-content ;
+        background-size:cover;
+        background-position: center center;
+        padding:0.5rem;
+    }
+
+    .footer{
+        padding:0.5rem;
     }
 
    
@@ -466,6 +475,10 @@ a {
         text-align: center;
     }
 
+    .border-container-2, .border-container-3 {
+        padding-bottom:5rem;
+    }
+
     .info-container p{
         text-align: center;
     }
@@ -476,9 +489,10 @@ a {
 
     .border-container-4{
         flex-direction: column;
-        padding:2rem;
+        padding:1rem;
         justify-content: start;
         align-items: start;
+        text-wrap: wrap;
     }
 
     .border-container-4 div{
@@ -513,11 +527,23 @@ a {
         display: flex;
     }
 
+    .info{
+        gap:1rem;
+        padding:0.25rem;
+        width: 100%;
+        overflow:hidden ;
+    }
+
     .link a {
         justify-content: flex-end;
         align-items: flex-end;
         gap: 0.5rem;
-        padding-block: 0.2rem
+        padding-block: 0.2rem;
+        
+    }
+
+    .link a p{
+        text-wrap: wrap;
     }
 }
 
