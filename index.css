@@ -391,8 +391,8 @@ a {
     border-radius: 10px;
     border: 2px solid var(--red);
     position: fixed;
-    right:1.5rem;
-    top:1.5rem;
+    right:3rem;
+    top:3rem;
     background-color: var(--cream);
     z-index: 100;
     display: flex;
