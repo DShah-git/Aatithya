@@ -422,14 +422,14 @@ a {
 
     .about-container {
         background-image: url('./assets/mobile-bg-2.png');
-        height: calc(max-content + 3rem) ;
-        background-size: contain;
+        height: max-content ;
+        background-size:cover;
     }
 
     .banquet-container {
         background-image: url('./assets/mobile-bg-2.png');
-        height: calc(max-content + 3rem) ;
-        background-size: contain;
+        height:max-content ;
+        background-size: cover;
     }
 
    
