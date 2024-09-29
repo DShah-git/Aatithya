@@ -222,6 +222,11 @@ a {
     font-size: 1.5rem;
 }
 
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
 @keyframes shift{
     0%{
 
@@ -423,7 +428,8 @@ a {
 
     .about-container {
         background-image: url('./assets/mobile-bg-2.png');
-        height: max-content ;
+        height: min-content ;
+        padding-bottom: 1rem;
         background-size:cover;
         background-position: center center;
         padding:0.5rem;
@@ -431,7 +437,7 @@ a {
 
     .banquet-container {
         background-image: url('./assets/mobile-bg-2.png');
-        height: max-content ;
+        height: min-content ;
         background-size:cover;
         background-position: center center;
         padding:0.5rem;
@@ -494,6 +500,8 @@ a {
         align-items: start;
         text-wrap: wrap;
     }
+
+
 
     .border-container-4 div{
         width: 100%;
