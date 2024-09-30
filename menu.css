@@ -28,3 +28,16 @@
 iframe{
     margin-top: 1rem;
 }
+
+iframe{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 550px) {
+    .menu-container, .border{
+        padding:1rem 0.5rem;
+    }
+
+
+}
