@@ -63,7 +63,6 @@ window.addEventListener("scroll", (event) => {
 toggleOpen.addEventListener("click",()=>{
     toggleOpen.style.display = "none"
     nav.style.display = "block"
-
 })
 
 toggleClose.addEventListener("click",()=>{
@@ -71,4 +70,5 @@ toggleClose.addEventListener("click",()=>{
     toggleOpen.style.position = "fixed"
     nav.style.display = "none"
 })
+
 

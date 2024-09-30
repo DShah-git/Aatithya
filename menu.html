@@ -16,7 +16,7 @@
             <h3>
                 <a href="/">Back to main page</a>
             </h3>
-            <embed src="/assets/Restaurant Menu.pdf" width="100%" height="100%" frameborder="0"></embed>
+            <iframe id="menu" width="100%" height="100%" frameborder="0"></iframe>
         </div>
         
     </div>
@@ -27,7 +27,13 @@
         Created By : 
         <a href="http://devanshshah.ca" target="_blank"> Devansh Shah</a>
     </div>
-    <script src="nav.js"></script>
+    <script>
+        let iframe = document.getElementById("menu")
+
+        console.log(iframe)
+
+        iframe.src = "/assets/Restaurant Menu.pdf"
+    </script>
 </body>
 
 </html>
